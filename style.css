@@ -17,7 +17,7 @@ body {
     padding: 10px;
 }
 
-.add-button {
+#add-button {
     text-decoration: none;
     color: #0000008b;
     cursor: pointer;
