@@ -2,24 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
     display: grid;
     height: 100vh;
     place-content: center;
+    background-color: #000000e7;
     transition: all 0.5s linear;
 }
+
+hr {
+    border: 1px solid rgba(255, 0, 0, 0.214);
+
+
+}
+
 
 .todo-head {
     text-align: center;
     font-size: 25px;
     padding: 10px;
+    color: aliceblue;
+
 }
 
 #add-button {
     text-decoration: none;
-    color: #0000008b;
+    color: #ffff;
     cursor: pointer;
 }
 
@@ -53,30 +64,49 @@ body {
 }
 
 .todo-input {
-    width: 300px;
+    width: 250px;
     padding: 10px;
-    border: 2px solid #0000008b;
-    border-radius: 10px;
+    background-color: transparent;
     font-size: 15px;
     text-transform: capitalize;
+    color: yellowgreen;
+    border-style: hidden;
+    border-bottom: 2px solid rgba(255, 255, 0, 0.581);
+    transition: all 0.5s linear;
+}
+
+.todo-input:focus {
+    width: 300px;
 }
 
 .checkbox {
     width: 15px;
+    
 }
-.done{
+
+.done {
     width: 100%;
     text-decoration: line-through;
 }
 
 
-.all-clear{
+.all-clear {
     width: 100%;
     margin-top: 20px;
     padding: 10px;
+    border: 1px solid #ffff;
     border-radius: 10px;
-    border-color: #0000008b;
-    font-size: 15px;
-    color: #0000008b;
-    
+    font-size: 16px;
+    color: #ffff;
+    background-color: black;
+
+}
+
+.all-clear:hover {
+    background-color: #ffff;
+    color: #000000e7;
+}
+
+.all-clear:active {
+    background-color: rgb(189, 50, 0);
 }

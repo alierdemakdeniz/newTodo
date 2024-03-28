@@ -3,6 +3,7 @@ const add =document.getElementById("add-button")
 const messageBoxs = document.getElementById("messageBoxs")
 const todoList = document.querySelector(".todoList-wrapper")
 const doneList =document.querySelector(".listDone")
+
 let todo;
 let addTodo=[];
 let getTodo=[];
@@ -52,7 +53,7 @@ function addTodoList(todo){
         </div> `)
     todoList.innerHTML=addTodo.join("")
 }
-// uyarı metni 
+// uyarı metni
 function messageBox(className,message){
     messageBoxs.innerHTML=`
     <span class="${className} messageBox">${message}</span>
@@ -118,12 +119,12 @@ function run(){
             messageBox("success","Liste Başarılı şekilde eklendi")
             todoInput.value=""
         }else{
-            messageBox("danger","lütfen baş bırakmayınız");
+            messageBox("danger","lütfen boş bırakmayınız");
         }
 
 }
 
-// sayfa yüklendiğinde yapılacaklar listesinin gelmesi için
+// sayfa yükelndiğinde yapılacaklar listesinin gelmesi için
 function pageLoaded(){
     getLocalStorage()
     getTodo.forEach(function(todo){
@@ -139,7 +140,7 @@ function deleteAll(){
         localStorage.setItem("list",JSON.stringify(addTodo))
         
     }else {
-        messageBox("danger","Silmek için en az bir yapılcak eklemeniz lazım")
+        messageBox("danger","Silmek için en az bir yapılcak eklemeniz gerek")
 
     }
 
