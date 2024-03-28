@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-list head">
+            <p class="todo-head">Todo-List</p>
+            <hr>
+            <div class="todo input">
+
+                <input type="text" class="todo-input" placeholder="Yapmak İstediğiniz İşi Yazınız">
+                <a href="#" id="add-button">
+
+                    <i class="fa-solid fa-plus"></i>
+                </a>
+
+            </div>
+            <div id="messageBoxs">
+
+                <!-- <span class="success messageBox">Listeye Eklendi</span> -->
+                <!-- <span class="danger messageBox">Lütfen Boş Bırakmayınız</span> -->
+            </div>
+        </div>
+        <hr>
+        <div class="todoList-wrapper">
+
+            <!-- <div class="todo list">
+                <input type="text" class="todo-input" disabled value="Ders Çalışmak">
+                <input type="checkbox" class="checkbox"
+                onclick="addDoneList()" >
+                
+            </div>
+            <div class="todo list">
+                <input type="text" class="todo-input" disabled value="Ders Çalışmak">
+                <input type="checkbox" class="checkbox" >
+                
+            </div>
+            <div class="todo list">
+                <input type="text" class="todo-input" disabled value="Ders Çalışmak">
+                <input type="checkbox" class="checkbox" >
+                
+            </div> -->
+        </div>
+        <hr>
+        <p class="todo-head">Done</p>
+
+        <div class="listDone doneInput">
+
+        </div>
+        <button type="button" class="all-clear" onclick="deleteAll()">Hepsini Temizle</button>
+
+
+
+
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

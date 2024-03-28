@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    transition: all 0.5s linear;
+}
+
+.todo-head {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.add-button {
+    text-decoration: none;
+    color: #0000008b;
+    cursor: pointer;
+}
+
+.messageBox {
+    display: inline-block;
+    width: 300px;
+    padding: 10px 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    text-transform: capitalize;
+
+}
+
+.success {
+    background-color: rgb(103, 203, 103);
+    color: green;
+}
+
+.danger {
+    background-color: rgb(237, 53, 53);
+    color: rgb(255, 255, 255);
+}
+
+.todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.todo-input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #0000008b;
+    border-radius: 10px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.checkbox {
+    width: 15px;
+}
+.done{
+    width: 100%;
+    text-decoration: line-through;
+}
+
+
+.all-clear{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #0000008b;
+    font-size: 15px;
+    color: #0000008b;
+    
+}
