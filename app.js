@@ -3,7 +3,6 @@ const add =document.getElementById("add-button")
 const messageBoxs = document.getElementById("messageBoxs")
 const todoList = document.querySelector(".todoList-wrapper")
 const doneList =document.querySelector(".listDone")
-// const deleteButton= document.querySelector(".all-clear")
 let todo;
 let addTodo=[];
 let getTodo=[];
@@ -53,9 +52,7 @@ function addTodoList(todo){
         </div> `)
     todoList.innerHTML=addTodo.join("")
 }
-// başarı mesajı
-
-// hata mesajı
+// uyarı metni 
 function messageBox(className,message){
     messageBoxs.innerHTML=`
     <span class="${className} messageBox">${message}</span>
@@ -126,7 +123,7 @@ function run(){
 
 }
 
-// sayfa yükelndiğinde yapılacaklar listesnin gelmesi için
+// sayfa yüklendiğinde yapılacaklar listesinin gelmesi için
 function pageLoaded(){
     getLocalStorage()
     getTodo.forEach(function(todo){
